@@ -1,0 +1,39 @@
+$("#submitName").click(function () {
+    var userName = $("#userName").val(); // Lấy tên người dùng nhập
+    var pwd = $("#pwd").val(); // Lấy mật khẩu người dùng nhập
+
+    // Kiểm tra nếu cả tên và mật khẩu đều nhập
+    if (userName && pwd) 
+    {
+      // Kiểm tra tên và mật khẩu chính xác
+      if (userName === "Nguyễn Ngọc Tâm Bình" && pwd === "1911") 
+      {
+        window.location.href = "welcome.html"; // Chuyển hướng trang
+      } else 
+      {
+        Swal.fire
+        ({
+          icon: "warning",
+          title: "Nhập sai ngày sinh hoặc tên rồi nha",
+          html: `<img src="img/Meme-meo-bieu-cam-3-1024x1024.jpg" style="width:250px;">`,
+          customClass: {
+            title: 'weird-title',
+            content: 'weird-content'
+          }
+        });
+      }
+    } 
+      else 
+      {
+      // Xử lý khi không nhập tên
+      Swal.fire({
+        icon: "error",
+        title: "Ní phải nhập tên và ngày sinh trước khi tiếp tục!",
+        html: `<img src="img/Lap.gif" style="width:250px;">`,
+        customClass: {
+          title: 'error-title',
+          content: 'error-content'
+        }
+      });
+    }
+})
