@@ -6,7 +6,7 @@ $("#submitName").click(function () {
     if (userName && pwd) 
     {
       // Kiểm tra tên và mật khẩu chính xác
-      if (userName === "Nguyễn Ngọc Tâm Bình" && pwd === "1911") 
+      if (userName === "Trần Ngọc Tâm Bình" && pwd === "1911") 
       {
         window.location.href = "welcome.html"; // Chuyển hướng trang
       } else 
