@@ -6,44 +6,19 @@
     <title>Bánh Sinh Nhật</title>
     <link rel="stylesheet" href="css/Cake.css">
     <link rel="stylesheet" href="css/Buton.css">
-    <style>
-        /* CSS cho bong bóng */
-        .balloon-container {
-            position: absolute;
-            width: 100%;
-            height: 100vh;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-            pointer-events: none;
-        }
-
-        .balloon-image {
-            position: absolute;
-            width: 80px;
-            animation: floatUp 8s ease-in infinite;
-        }
-
-        /* Vị trí ban đầu ngẫu nhiên và di chuyển lên */
-        .balloon1 { left: 10%; animation-delay: 0s; }
-        .balloon2 { left: 30%; animation-delay: 2s; }
-        .balloon3 { left: 50%; animation-delay: 4s; }
-        .balloon4 { left: 70%; animation-delay: 6s; }
-
-        @keyframes floatUp {
-            0% { bottom: -100px; opacity: 0; transform: translateY(0); }
-            10% { opacity: 1; }
-            100% { bottom: 100vh; opacity: 0; transform: translateY(-200px); }
-        }
-    </style>
 </head>
 <body>
     <audio src="./sound/Happy Birthday.mp3" autoplay></audio>
     <div id="bg"></div>
-
+    
+    </div>
     <div class="cake">
+        <!-- Bánh kem tạo bằng Gif -->
+        <!-- <img src="img/Banhsn.gif" class="cake-image" alt="Cake Decoration"> 
+        <img src="img/texthpb.gif" class="textB-image" alt="Cake Decoration">  -->
+
         <div class="cake-top">
-            <img src="img/texthpb.gif" class="cake-image2" alt="Cake Decoration">
+            <img src="img/texthpb.gif" class="cake-image2" alt="Cake Decoration"> 
             <div class="candle candle1">
                 <div class="stem"></div>
                 <div class="flame1"></div>
@@ -53,32 +28,73 @@
                 <div class="stem"></div>
             </div>
         </div>
-
         <div class="cake-layer layer1">
-            <div class="icing">
-                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <!-- Thêm kem  -->
+             
+            <div class ="icing">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="bow3"></div>
+            <!-- Thêm ruy băng  -->
+            <div class ="bow3"></div>
+            <!-- Thêm hoa-->
+            
             <div class="flower flower5">
                 <div class="petal one"></div>
                 <div class="petal two"></div>
                 <div class="petal three"></div>
                 <div class="petal four"></div>
             </div>
-        </div>
 
+        </div>
         <div class="cake-layer layer2">
-            <div class="icing">
-                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <!-- Thêm kem  -->
+            <div class ="icing">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="bow2"></div>
-        </div>
+            <!-- Thêm ruy băng  -->
+            <div class ="bow2"></div>
+            
+           
+            <!-- Thêm cherry  -->
+            <!-- <div class ="cherries2">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div> -->
 
+        </div>
         <div class="cake-layer layer3">
-            <div class="icing">
-                <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <!-- Thêm kem  -->
+            <div class ="icing">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="bow"></div>
+            <!-- Thêm ruy băng  -->
+            <div class ="bow"></div>
+            <!-- Thêm hoa -->
             <div class="flower flower4">
                 <div class="petal one"></div>
                 <div class="petal two"></div>
@@ -91,10 +107,17 @@
                 <div class="petal three"></div>
                 <div class="petal four"></div>
             </div>
+            <!-- Thêm cherry  -->
+            <!-- <div class ="cherries">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div> -->
         </div>
-
-        <div class="plate"></div>
-
+        <!-- Thêm dĩa -->
+         
+        <div class="plate"></div> 
         <button id="yes" type="button">Nhận quà!</button>
         <button id="no" type="button">Đéo nhận!</button>
     </div>
