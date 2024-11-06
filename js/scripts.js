@@ -1,7 +1,7 @@
 document.getElementById("yes").addEventListener("click", function() {
-    window.location.href = "Memory.html";
+    window.location.href = "Memories.html";
 });
 
 document.getElementById("no").addEventListener("click", function() {
-    window.location.href = "Hehe.html";
+    window.location.href = "Hihi.html";
 });
