@@ -52,7 +52,7 @@ body {
 .candle1 {
     width: 7px;
     height: 70px;
-    bottom: -15px;
+    bottom: -20px;
     background-color: #ffb6c1;
     position: relative;
     border-radius: 5px;
@@ -90,7 +90,7 @@ body {
     width: 8px;
     height: 15px;
     background-color: #ffdd57;
-    top: -15px; /* Đưa ngọn lửa lên trên nến */
+    top: -20px; /* Đưa ngọn lửa lên trên nến */
     left: 0px;
     transform: translateX(-50%);
     border-radius: 50%;
@@ -113,21 +113,21 @@ body {
 
 /* Lớp bánh thứ nhất (tầng 3) */
 .layer1 {
-    background-color: #ff85b6;
+    background-color: #d9a4f5;
     width: 160px;
     animation-delay: 1.5s; /* Tầng 3 rơi trước */
 }
 
 /* Lớp bánh thứ hai (tầng 2) */
 .layer2 {
-    background-color: #ff85b6;
+    background-color: #d9a4f5;
     width: 180px;
     animation-delay: 1s; /* Tầng 2 rơi sau */
 }
 
 /* Lớp bánh thứ ba (tầng 1) */
 .layer3 {
-    background-color: #ffa3c4;
+    background-color: #d9a4f5;
     width: 200px;
     animation-delay: 0.5s; /* Tầng 1 rơi cuối cùng */
 }
@@ -139,9 +139,9 @@ body {
 
 .cream {
     position: absolute;
-    height: 10px;
+    height: 8px;
     width: 100%;
-    top: -10px;
+    top: -5px;
     background-color: #ffffff;
     border-radius: 10px 10px 0 0;
     z-index: 1;
@@ -180,95 +180,140 @@ body {
 
 .bow {
     position: absolute;
-    width: 60px; /* Chiều rộng của nơ */
-    height: 30px; /* Chiều cao của nơ */
-    background-color: #ff1493; /* Màu sắc của nơ */
-    border-radius: 10px; /* Đường viền tròn cho nơ */
-    top: 30px; /* Vị trí trên bánh */
+    width: 200px; /* Chiều rộng của nơ */
+    height: 8px; /* Chiều cao của nơ */
+    background-color: #f098c7; /* Màu sắc của nơ */
+    border-radius: 0px; /* Đường viền tròn cho nơ */
+    top: 20px; /* Vị trí trên bánh */
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg); /* Canh giữa nơ */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng cho nơ */
+}
+.bow2 {
+    position: absolute;
+    width: 180px; /* Chiều rộng của nơ */
+    height: 8px; /* Chiều cao của nơ */
+    background-color: #f098c7; /* Màu sắc của nơ */
+    border-radius: 0px; /* Đường viền tròn cho nơ */
+    top: 20px; /* Vị trí trên bánh */
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg); /* Canh giữa nơ */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng cho nơ */
+}
+.bow3 {
+    position: absolute;
+    width: 160px; /* Chiều rộng của nơ */
+    height: 8px; /* Chiều cao của nơ */
+    background-color: #f098c7; /* Màu sắc của nơ */
+    border-radius: 0px; /* Đường viền tròn cho nơ */
+    top: 20px; /* Vị trí trên bánh */
     left: 50%;
     transform: translateX(-50%) rotate(0deg); /* Canh giữa nơ */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng cho nơ */
 }
 
 
-/* Kẹo trang trí */
-.candy1 {
-    position: absolute;
-    width: 12px;
-    height: 15px;
-    background-color: #ff0000;
-    border-radius: 50%;
-    top: 5px; /* Đặt kẹo lên trên lớp bánh */
-    left: 30px;
-    transform: translateX(-50%);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
 
-.candy2 {
-    position: absolute;
-    width: 12px;
-    height: 15px;
-    background-color: #fff700;
-    border-radius: 50%;
-    top: 5px; /* Đặt kẹo lên trên lớp bánh */
-    left: 70px;
-    transform: translateX(-50%);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.icing{
+    position: relative;
 }
-
-.candy3 {
-    position: absolute;
-    width: 12px;
-    height: 15px;
-    background-color: #95ff00;
-    border-radius: 50%;
-    top: 5px; /* Đặt kẹo lên trên lớp bánh */
-    left: 110px;
-    transform: translateX(-50%);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-.candy4 {
-    position: absolute;
-    width: 12px;
-    height: 15px;
-    background-color: #e600ff;
-    border-radius: 50%;
-    top: 5px; /* Đặt kẹo lên trên lớp bánh */
-    left: 150px;
-    transform: translateX(-50%);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-/* Sô cô la */
-.chocolate {
-    position: absolute;
-    width: 30px;
-    height: 20px;
-    background-color: #7b3f00; /* Màu nâu của sô cô la */
-    border-radius: 80%;
-    top: 0px; /* Đặt sô cô la lên trên lớp bánh */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* Hiệu ứng kẹo */
-.candy::before,
-.candy::after {
-    content: "";
-    position: absolute;
-    width: 10px;
+.icing>div{
+    background-color: #ffffff;
     height: 10px;
-    background-color: #ff6347; /* Màu sắc kẹo */
+    width: 20px;
+    border-radius: 0 0 26px 26px;
+    position: absolute;
+}
+.icing>div:nth-child(1)
+{
+    left: 0px;
+}
+.icing>div:nth-child(2)
+{
+    left: 20px;
+}
+.icing>div:nth-child(3)
+{
+    left: 40px;
+}
+
+.icing>div:nth-child(4)
+{
+    left: 60px;
+}
+.icing>div:nth-child(5)
+{
+    left: 80px;
+}
+.icing>div:nth-child(6)
+{
+    left: 100px;
+}
+.icing>div:nth-child(7)
+{
+    left: 120px;
+}
+.icing>div:nth-child(8)
+{
+    left: 140px;
+}
+.icing>div:nth-child(9)
+{
+    left: 160px;
+}
+.icing>div:nth-child(10)
+{
+    left: 180px;
+}
+
+.cherries>div
+{
+    background-color: #ff2e3a;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
-    top: px;
+    position: absolute;
+    top: -15px;
+}
+.cherries>div:nth-child(1)
+{
+    left: 30px;
+}
+.cherries>div:nth-child(2)
+{
+    left: 70px;
+}
+.cherries>div:nth-child(3)
+{
+    left: 110px;
+}
+.cherries>div:nth-child(4)
+{
+    left: 150px;
+}
+.cherries2>div
+{
+    background-color: #ff2e3a;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+}
+.cherries2>div:nth-child(1)
+{
+    left: 40px;
+}
+.cherries2>div:nth-child(2)
+{
+    left: 80px;
+}
+.cherries2>div:nth-child(3)
+{
+    left: 120px;
 }
 
-.candy::before {
-    left: -10px;
-}
 
-.candy::after {
-    right: -10px;
-}
 .plate {
     position: relative;
     width: 250px; /* Chiều rộng của dĩa */
@@ -295,10 +340,6 @@ body {
     height: auto; /* Giữ tỉ lệ ảnh */
 }
 
-
-
-
-
 .textB-image {
     position: absolute;
     top: -230px; /* Đặt vị trí ảnh lên trên bánh */
@@ -315,4 +356,57 @@ body {
     top: -70px;
     width: 350px; /* Đặt kích thước ảnh */
     height: auto; /* Giữ tỉ lệ ảnh */
+}
+
+/* knot Container */
+.knot {
+    position: absolute;
+    top: 10px; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    animation: bloom 2s ease-in-out infinite alternate;
+    z-index: 1;
+}
+
+/* knot Petals */
+.knot::before, .knot::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff4b5c;
+    border-radius: 50%;
+    top: 5px;
+}
+
+/* Left Petal */
+.knot::before {
+    transform: rotate(-45deg);
+    left: -10px;
+}
+
+/* Right Petal */
+.knot::after {
+    transform: rotate(45deg);
+    right: -10px;
+}
+
+/* knot Center */
+.knot-center {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #ff2e3a;
+    border-radius: 50%;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Bloom Animation */
+@keyframes bloom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
 }
