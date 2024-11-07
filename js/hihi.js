@@ -27,7 +27,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-    window.location.href = "memories.html";
+    window.location.href = "Memories.html";
 }
 function resizeYesButton() {
   const computedStyle = window.getComputedStyle(yesButton);
