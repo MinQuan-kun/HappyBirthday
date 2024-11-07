@@ -8,14 +8,14 @@ $("#submitName").click(function () {
       // Kiểm tra tên và mật khẩu chính xác
       if (userName === "user" && pwd === "pass") 
       {
-        window.location.href = "welcome.html"; // Chuyển hướng trang
+        window.location.href = "welcome.html"; // Chuyển hướng trang welcome
       } else 
       {
         Swal.fire
         ({
           icon: "warning",
           title: "Nhập sai ngày sinh hoặc tên rồi nha",
-          html: `<img src="img/Meme-meo-bieu-cam-3-1024x1024.jpg" style="width:250px;">`,
+          html: `<img src="img/Whut.jpg" style="width:250px;">`,
           customClass: {
             title: 'weird-title',
             content: 'weird-content'

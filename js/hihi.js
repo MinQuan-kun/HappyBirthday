@@ -51,6 +51,7 @@ function generateMessage(noCount) {
   return messages[messageIndex];
 }
 
+//Sự kiện thay đổi ảnh
 function changeImage(image) {
   catImg.src = `img/cat-${image}.jpg`;
 }
